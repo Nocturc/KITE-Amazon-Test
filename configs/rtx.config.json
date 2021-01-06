@@ -1,0 +1,36 @@
+{
+  "name": "Amazon Test %ts",
+  "grids": [
+    {
+      "type": "local",
+      "url": "http://localhost:4444/wd/hub"
+    }
+  ],
+  "tests": [
+    {
+      "csvReport": true,
+      "name": "Amazon test",
+      "description": "Amazon Test",
+      "tupleSize": 1,
+      "testImpl": "io.cosmosoftware.kite.amazon.tests.AmazonTest",
+      "payload": {
+        "url": "https://www.amazon.sg/About-English-Grammar-Lower-Secondary/dp/B07W1YXNL1",
+        "credentials":  {
+            "email": "",
+            "password": ""
+          },
+        "telegram": {
+          "token": "",
+          "chatId": ""
+        }
+      }
+    }
+  ],
+  "clients": [
+    {
+      "browserName": "chrome",
+      "platform": "WINDOWS",
+      "headless": false
+    }
+  ]
+}
